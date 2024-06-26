@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sceintific calculator by Jainam Bheda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <section class="box-one">
+            <div class="box-one-top">
+                <div id="box-one-text">
+                   <span id="name">BHEDA</span> 
+                   <span>CASIO POWERX CALCULATOR</span>
+                </div>
+                <center id="center">
+                    <code>JAINAM BHEDA</code>
+                </center>
+                <div id="box-one-middle">
+                    <input type="text" id="result">
+                </div>
+                <span id="box-one-bottom">
+                    <button onclick="Squareroot()">√</button>
+                    <button onclick="Cuberoot()">3<sub>√</sub></button>
+                    <button onclick="AC()">OFF</button>
+                    <button onclick="AC()">ON</button>
+                    <button onclick="calculatePower()">POW</button>
+
+                </span>
+            </div>
+            <div class="box-two">
+                    <span>
+                        <small>x<sup>2</sup></small>
+                        <small>deg/rad</small>
+                        <small>Clear</small>
+                        <small>Recall</small>
+                        <small>ADD</small>
+                        <small>SUB</small>
+                    </span>
+                    <span>
+                        <button onclick="preparePower()" id="power">x<sup>y</sup></button>
+                        <button onclick="toggleAngleMode()" id="angle-mode-toggle">deg / rad</button>
+                        <button onclick="memClear()" id="MC">MC</button>
+                        <button onclick="memRecall()" id="MR">MR</button>
+                        <button onclick="memAdd()" id="M">M+</button>
+                        <button onclick="memSubtract()" id="M-">M-</button> 
+                    </span>
+                    <span>
+                        <small>PERM</small>
+                        <small>COMB</small>
+                        <small>COMMA</small>
+                        <small>sec</small>
+                        <small>cosec</small>
+                        <small>sec<sup>-1</sup></small>
+                    </span>
+                    <span>
+                        <button onclick="nPr()">nPr</button>
+                        <button onclick="nCr()">nCr</button>
+                        <button onclick="dis(',')">,</button>
+                        <button onclick="sec()">sec</button>
+                        <button onclick="cosec()">cosec</button>
+                        <button onclick="asec()">sec<sup>-1</sup></button>
+                    </span>
+                    
+                    <span>
+                        <small>cosec <sup>-1</sup></small>
+                        <small>log</small>
+                        <small>ln</small>
+                        <small>e</small>
+                        <small>cot</small>
+                        <small>coth</small>
+                    </span>
+                    <span>
+                        <button onclick="acosec()">cosec<sup>-1</sup></button>
+                        <button onclick="log()">log</button>
+                        <button onclick="ln()">ln</button>
+                        <button onclick="e()">e<sup>x</sup></button>
+                        <button onclick="cot()">cot</button>
+                        <button onclick="coth()">coth</button>
+                    </span>
+                    <span>
+                        <small>sin<sup>-1</sup></small>
+                        <small>sin</small>
+                        <small>sinh</small>
+                        <small>cos</small>
+                        <small>cosh</small>
+                        <small>cos<sup>-1</sup></small>
+                    </span>
+                    <span>
+                        <button onclick="asin()">sin<sup>-1</sup></button>
+                        <button onclick="sin()">sin</button>
+                        <button onclick="sinh()">sinh</button>
+                        <button onclick="cos()">cos</button>
+                        <button onclick="cosh()">cosh</button>
+                        <button onclick="acos()">cos<sup>-1</sup></button>
+                    </span>
+                    <span>
+                        <small>tan<sup>-1</sup></small>
+                        <small>tan</small>
+                        <small>tanh</small>
+                        <small>cot</small>
+                        <small>coth</small>
+                        <small>cot<sup>-1</sup></small>
+                    </span>
+                    <span>
+                        <button onclick="atan()">tan<sup>-1</sup></button>
+                        <button onclick="tan()">tan</button>
+                        <button onclick="tanh()">tanh</button>
+                        <button onclick="cot()">cot</button>
+                        <button onclick="coth()">coth</button>
+                        <button onclick="acot()">cot<sup>-1</sup></button>
+                    </span>
+                    <span></span>
+                    <span></span>
+            </div>
+            <div class="box-three">
+                <span>
+                    <small>M</small>
+                    <small>O</small>
+                    <small>T</small>
+                    <small>INS</small>
+                    <small>OFF</small>
+                </span>
+                <span>
+                    <button onclick="dis('7')">7</button>
+                    <button onclick="dis('8')">8</button>
+                    <button onclick="dis('9')">9</button>
+                    <button id="del" onclick="del()">DEL</button>
+                    <button id="ac" onclick="AC()">AC</button>
+                </span>
+                <span>
+                    <small>MAT</small>
+                    <small>VCT</small>
+                    <small>K</small>
+                    <small>nPr</small>
+                    <small>nCr</small>
+                </span>
+                <span>
+                    <button onclick="dis('4')">4</button>
+                    <button onclick="dis('5')">5</button>
+                    <button onclick="dis('6')">6</button>
+                    <button onclick="dis('*')">X</button>
+                    <button onclick="dis('/')">/</button>
+                </span>
+                <span>
+                    <small>SUM</small>
+                    <small>S.VAR</small>
+                    <small>DISTR</small>
+                    <small>nPr</small>
+                    <small>a+bi</small>
+                </span>
+                <span>
+                    <button onclick="dis('3')">3</button>
+                    <button onclick="dis('2')">2</button>
+                    <button onclick="dis('1')">1</button>
+                    <button id="air1" onclick="dis('+')">+</button>
+                    <button onclick="dis('-')">-</button>
+                </span>
+                <span>
+                    <small>RND</small>
+                    <small>RANF</small>
+                    <small>!</small>
+                    <small>DRG</small>
+                    <small>Re-IM</small>
+                </span>
+                <span>
+                    <button onclick="dis('0')">0</button>
+                    <button onclick="dis('.')">.</button>
+                    <button>EXP</button>
+                    <button id="ans" onclick="ans()">ANS</button>
+                    <button id="back" onclick="slove()">=</button>
+                </span>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
